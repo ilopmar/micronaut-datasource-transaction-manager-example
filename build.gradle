@@ -39,6 +39,12 @@ dependencies {
     compile "io.micronaut:http-server-netty"
     compile "io.micronaut:inject"
     compile "io.micronaut:runtime"
+
+    compile "io.micronaut:spring"
+    compile "io.micronaut.configuration:jdbc-dbcp"
+    compile 'org.springframework:spring-jdbc:4.3.17.RELEASE'
+    runtime "com.h2database:h2:1.4.196"
+
     compileOnly "io.micronaut:inject-java"
     runtime "ch.qos.logback:logback-classic:1.2.3"
     testCompile "junit:junit:4.12"
